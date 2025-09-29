@@ -1,5 +1,8 @@
 # Terraform Azure Infra Starter (Portfolio)
 
+![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4?logo=terraform)
+![Azure](https://img.shields.io/badge/Cloud-Azure-0078D4?logo=microsoftazure)
+
 A clean, interview‑ready Terraform project that deploys a basic Azure landing zone:
 - Resource Group, VNet, Subnet
 - Network Security Group (module)
