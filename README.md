@@ -90,11 +90,13 @@ terraform destroy -var-file=dev.tfvars
 
 ## Validation (screenshots)
 
-![apply](docs/screenshots/Screenshot%202025-09-29%20at%2014.02.44.png)
+<p float="left">
+  <img src="docs/screenshots/Screenshot%202025-09-29%20at%2014.02.44.png" width="45%" />
+  <img src="docs/screenshots/Screenshot%202025-09-29%20at%2014.01.07.png" width="45%" />
+</p>
 
-![portal](docs/screenshots/Screenshot%202025-09-29%20at%2014.01.07.png)
-
-![ssh](docs/screenshots/Screenshot%202025-09-29%20at%2013.35.51.png)
-
-![nginx](docs/screenshots/Screenshot%202025-09-29%20at%2013.57.45.png)
+<p float="left">
+  <img src="docs/screenshots/Screenshot%202025-09-29%20at%2013.35.51.png" width="45%" />
+  <img src="docs/screenshots/Screenshot%202025-09-29%20at%2013.57.45.png" width="45%" />
+</p>
 
