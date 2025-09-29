@@ -89,8 +89,12 @@ terraform destroy -var-file=dev.tfvars
 # terraform-azure-portfolio-vm
 
 ## Validation (screenshots)
+
 ![apply](docs/screenshots/Screenshot 2025-09-29 at 14.02.44.png)
+
 ![portal](docs/screenshots/Screenshot 2025-09-29 at 14.01.07.png)
+
 ![ssh](docs/screenshots/Screenshot 2025-09-29 at 13.35.51.png)
+
 ![nginx](docs/screenshots/Screenshot 2025-09-29 at 13.57.45.png)
 
