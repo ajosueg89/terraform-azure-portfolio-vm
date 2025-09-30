@@ -101,4 +101,8 @@ terraform destroy -var-file=dev.tfvars
   <img src="docs/screenshots/ssh-session.png" width="45%" />
   <img src="docs/screenshots/nginx-welcome.png" width="45%" />
 </p>
+<p float="left">
+  <img src="docs/screenshots/nsg-secure.png" width="45%" />
+</p>
+
 
