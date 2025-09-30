@@ -23,6 +23,7 @@ flowchart LR
       NIC[NIC]
       VM[Linux VM Module]
       ST[Storage Account (tfstate)]
+    end
 
     RG --> VNET --> SUBNET
     SUBNET --> NIC --> VM
@@ -31,6 +32,7 @@ flowchart LR
 
     subgraph GitHub
       GH[GitHub Actions CI]
+    end
 
     GH --> Terraform
 ```
