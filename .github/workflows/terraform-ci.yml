@@ -12,10 +12,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Terraform (pin version)
+      - name: Setup Terraform (pin to 1.11.4)
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: 1.6.6
+          terraform_version: 1.11.4
           terraform_wrapper: false
 
       - name: terraform fmt (check)
