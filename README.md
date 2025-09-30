@@ -23,7 +23,6 @@ flowchart LR
       NIC[NIC]
       VM[Linux VM Module]
       ST[Storage Account (tfstate)]
-    end
 
     RG --> VNET --> SUBNET
     SUBNET --> NIC --> VM
