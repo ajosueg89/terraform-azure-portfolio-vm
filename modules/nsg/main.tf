@@ -1,13 +1,18 @@
 terraform {
   required_providers {
-    azurerm = { source = "hashicorp/azurerm", version = "~> 3.114" }
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.114"
+    }
   }
 }
+
 resource "azurerm_network_security_group" "this" {
   name                = var.name
   location            = var.location
   resource_group_name = var.resource_group_name
 
+  # SSH locked by allowed_ssh_cidr
   security_rule {
     name                       = "allow_ssh"
     priority                   = 1001
@@ -19,6 +24,8 @@ resource "azurerm_network_security_group" "this" {
     source_address_prefix      = var.allowed_ssh_cidr
     destination_address_prefix = "*"
   }
+
+  # HTTP
   security_rule {
     name                       = "allow_http"
     priority                   = 1002
@@ -30,6 +37,8 @@ resource "azurerm_network_security_group" "this" {
     source_address_prefix      = "*"
     destination_address_prefix = "*"
   }
+
+  # HTTPS
   security_rule {
     name                       = "allow_https"
     priority                   = 1003
@@ -41,6 +50,10 @@ resource "azurerm_network_security_group" "this" {
     source_address_prefix      = "*"
     destination_address_prefix = "*"
   }
+
   tags = var.tags
 }
-output "id" { value = azurerm_network_security_group.this.id }
+
+output "id" {
+  value = azurerm_network_security_group.this.id
+}
