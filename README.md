@@ -31,7 +31,6 @@ flowchart LR
 
     subgraph GitHub
       GH[GitHub Actions CI]
-    end
 
     GH --> Terraform
 ```
