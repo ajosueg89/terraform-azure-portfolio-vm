@@ -106,3 +106,5 @@ terraform destroy -var-file=dev.tfvars
 </p>
 
 
+
+[![terraform-ci](https://github.com/ajosueg89/terraform-azure-portfolio-vm/actions/workflows/terraform-ci.yml/badge.svg)](https://github.com/ajosueg89/terraform-azure-portfolio-vm/actions/workflows/terraform-ci.yml)
