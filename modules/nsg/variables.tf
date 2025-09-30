@@ -1,13 +1,18 @@
 variable "name" {
-  type = string
+  type = string 
 }
 variable "location" {
-  type = string
+  type = string 
 }
 variable "resource_group_name" {
-  type = string
+  type = string 
 }
 variable "tags" {
-  type    = map(string)
-  default = {}
+  type = map(string)
+  default = {} 
+}
+variable "allowed_ssh_cidr" {
+  description = "CIDR allowed to access SSH (22)"
+  type        = string
+  default     = "0.0.0.0/0"
 }
