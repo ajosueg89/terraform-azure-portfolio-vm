@@ -15,26 +15,26 @@ A clean, interview‑ready Terraform project that deploys a basic Azure landing 
 
 ```mermaid
 flowchart LR
-    subgraph Azure
-      RG[Resource Group]
-      VNET[VNet]
-      SUBNET[Subnet]
-      NSG[NSG Module]
-      NIC[NIC]
-      VM[Linux VM Module]
-      ST[Storage Account (tfstate)]
-    end
+  subgraph Azure
+    RG[Resource Group]
+    VNET[VNet]
+    SUBNET[Subnet]
+    NSG[NSG Module]
+    NIC[NIC]
+    VM[Linux VM Module]
+    TFSTATE[(Storage Account)]
+  end
 
-    RG --> VNET --> SUBNET
-    SUBNET --> NIC --> VM
-    NSG --> SUBNET
-    ST -. remote state .- Terraform
+  RG --> VNET --> SUBNET
+  SUBNET --> NIC --> VM
+  NSG --> SUBNET
+  TFSTATE -. remote state .- Terraform
 
-    subgraph GitHub
-      GH[GitHub Actions CI]
-    end
+  subgraph GitHub
+    GH[GitHub Actions CI]
+  end
 
-    GH --> Terraform
+  GH --> Terraform
 ```
 
 ## What this shows hiring managers
